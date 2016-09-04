@@ -1,0 +1,20 @@
+ /* 通用样式初始化设置 */
+body,div,ul,li,h2,p,span{margin:0;padding:0;border:0 none;font-family:"微软雅黑";}
+ul>li{list-style: none;}
+
+.leos-slider-700{width: 700px;height: 428px;margin: 0 auto;position: relative;}
+.leos-slider-700 .leos-slider-container{width: 700px;height: 428px;position: relative;overflow: hidden;}
+.leos-slider .leos-slider-container .leos-slide{position: absolute;}
+
+.leos-slider .leos-slider-indicator{height: 12px;position: absolute;bottom: 30px;left: 50%; z-index: 1000;}
+.leos-slider .leos-slider-indicator li:first-child{margin-left: 0;}
+.leos-slider .leos-slider-indicator li{float: left;margin-left:10px;width: 40px;height: 12px;background-color: #ddd;transition:background-color ease .1s;}
+.leos-slider .leos-slider-indicator li:s{background-color: #f44;cursor: pointer;}
+.leos-slider .leos-slider-indicator li.active{background-color: #f11;}
+
+.leos-slider-nav{width: 100%;position: absolute;top: 50%;left: 0}
+.leos-slider-nav .leos-left,.leos-slider-nav .leos-right{width: 40px;height: 70px;position: absolute;top: 50%;margin-top: -35px;display: none;}
+.leos-slider-nav .leos-left:hover,.leos-slider-nav .leos-right:hover{cursor: pointer;}
+.leos-slider-nav .leos-left{background: url("../img/btn_left.png") no-repeat;}
+.leos-slider-nav .leos-right{background: url("../img/btn_right.png") no-repeat;right: 0}
+.leos-slider:hover .leos-slider-nav .leos-left,.leos-slider:hover .leos-slider-nav .leos-right{display: inline-block;}
